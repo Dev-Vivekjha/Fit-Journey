@@ -23,17 +23,17 @@ const Container = styled.div`
 function App() {
   const { currentUser } = useSelector((state) => state.user);
 
-  if (!currentUser) {
-    return (
-      <ThemeProvider theme={lightTheme}>
-        <BrowserRouter>
-          <Container>
-            <Authentication />
-          </Container>
-        </BrowserRouter>
-      </ThemeProvider>
-    );
-  }
+  // if (!currentUser) {
+  //   return (
+  //     <ThemeProvider theme={lightTheme}>
+  //       <BrowserRouter>
+  //         <Container>
+  //           <Authentication />
+  //         </Container>
+  //       </BrowserRouter>
+  //     </ThemeProvider>
+  //   );
+  // }
 
   return (
     <ThemeProvider theme={lightTheme}>

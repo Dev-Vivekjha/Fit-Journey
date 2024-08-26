@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "https://fit-journey-ymr2.onrender.com/api/",
+  baseURL: "http://192.168.0.105:3000/api/",
 });
 
 export const UserSignUp = async (data) => API.post("/user/signup", data);
